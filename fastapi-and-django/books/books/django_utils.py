@@ -6,14 +6,13 @@ def with_django_initialized(func):
 
     @functools.wraps(func)
     def _initialize_django_before_execution(*args, **kwargs):
-        initialize_django_and_logging()
+        initialize_django()
         return func(*args, **kwargs)
 
     return _initialize_django_before_execution
 
 
-def initialize_django_and_logging():
-    """Makes sure that Django is initialized only one time"""
+def initialize_django():
     global _ALREADY_INITIALIZED_DJANGO
     if _ALREADY_INITIALIZED_DJANGO is False:
         from os import environ

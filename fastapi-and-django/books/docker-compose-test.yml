@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    command: tail -f /dev/null
+    volumes:
+      - .:/app
+    depends_on:
+      - db
+  db:
+    image: postgres:14
+    environment:
+      POSTGRES_DB: books_database
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      PORT: 5432
+
+volumes:
+  postgres_data:

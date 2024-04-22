@@ -20,7 +20,7 @@ def initialize_books_app():
     return app
 
 
-def create_books_api():
+def create_books_app():
     set_up_django()
     app = initialize_books_app()
     return app
