@@ -6,4 +6,6 @@ from books.core.books.repository import BookRepository
 def attach_author_service() -> AuthorService:
     book_repository = BookRepository()
     author_repository = AuthorRepository()
-    return AuthorService(book_repository=book_repository, author_repository=author_repository)
+    return AuthorService(
+        book_repository=book_repository, author_repository=author_repository
+    )

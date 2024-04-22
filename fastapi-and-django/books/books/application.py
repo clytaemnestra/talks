@@ -1,22 +1,28 @@
 import importlib
-
 from fastapi import FastAPI
 
 
 class Application:
-    def __init__(self, name, version, port, host):
-        self._name = name
-        self._port = port
-        self._version = version
-        self._host = host
+    def __init__(self, name, host, version="0.1"):
+        self._initialize_django()
 
-        self.app = FastAPI(title=self._name, version=self._version, host=self._host)
+        self.app = FastAPI(title=name, version=version)
 
-    def init(self, route_factories):
-        self._load_routes(route_factories)
-        return self
+        self._setup_routes(
+            [
+                ("books.api.books.routes", "/v0/books", ["Books"]),
+                ("books.api.authors.routes", "/v0/authors", ["Authors"]),
+            ]
+        )
 
-    def _load_routes(self, route_factories):
+    def _initialize_django(self):
+        import os
+        from django import setup
+
+        os.environ.setdefault("DJANGO_SETTINGS_MODULE", "books.settings")
+        setup()
+
+    def _setup_routes(self, route_factories):
         for router_module_path, prefix, tags in route_factories:
             router_module = importlib.import_module(router_module_path)
             self.app.include_router(

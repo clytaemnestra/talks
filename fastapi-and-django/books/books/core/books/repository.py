@@ -23,7 +23,10 @@ class BookRepository:
         self, title: str, author_id: str, isbn: str, publication_date: datetime
     ) -> Book:
         book = Book.objects.create(
-            title=title, author_id=author_id, isbn=isbn, publication_date=publication_date
+            title=title,
+            author_id=author_id,
+            isbn=isbn,
+            publication_date=publication_date,
         )
         return book
 

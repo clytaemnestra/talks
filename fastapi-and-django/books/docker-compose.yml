@@ -3,13 +3,9 @@ version: '3.8'
 services:
   books-app:
     image: books-app:latest
+    build: .
     ports:
       - "8000:8000"
-    command:
-      - python
-      - -m
-      - books.cli
-      # - books-api
     volumes:
       - ./books:/app/books
     environment:
@@ -19,8 +15,6 @@ services:
       - DATABASE_NAME=books_database
     depends_on:
       - postgres
-    extra_hosts:
-      - "host.docker.internal:host-gateway"
 
   postgres:
     image: postgres:14
@@ -32,8 +26,6 @@ services:
       - postgres_data:/var/lib/postgresql/data
     ports:
       - "5432:5432"
-    extra_hosts:
-      - "host.docker.internal:host-gateway"
 
 volumes:
   postgres_data:

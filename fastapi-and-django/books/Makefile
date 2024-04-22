@@ -15,3 +15,6 @@ all-tests:
 
 test-stack-up:
 	docker-compose -f $(TEST_COMPOSE_FILE) up -d --force-recreate
+
+dev-stack-up:
+	docker compose -f $(DEV_COMPOSE_FILE) up --build

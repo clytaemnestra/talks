@@ -7,12 +7,12 @@ from starlette.testclient import TestClient
 @pytest.fixture(scope="session")
 def books_app() -> "FastAPI":
     from django.core import management
-    from books.asgi import create_books_app
+    from books.application import Application
 
     management.call_command("migrate")
 
-    app = create_books_app()
-    yield app
+    app = Application(name="Test App", host="0.0.0.0")
+    yield app.get_asgi_app()
 
 
 @pytest.fixture(scope="session")

@@ -3,6 +3,7 @@ from django.db import transaction
 from books.api.authors.schema import ReadAuthorSchema, CreateAuthorRequest
 from books.core.db_utils import db_sync_to_async
 
+
 class AuthorService:
     def __init__(self, author_repository, book_repository):
         self._author_repository = author_repository
