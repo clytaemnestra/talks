@@ -16,10 +16,16 @@ class BookRepository:
     def delete(self, book_id: int) -> None:
         return Book.objects.get(id=book_id).delete()
 
+    def delete_multiple_books(self, books: list[int]) -> None:
+        return Book.objects.filter(id__in=books).delete()
+
     def create(
-        self, title: str, author: str, isbn: str, publication_date: datetime
+        self, title: str, author_id: str, isbn: str, publication_date: datetime
     ) -> Book:
         book = Book.objects.create(
-            title=title, author=author, isbn=isbn, publication_date=publication_date
+            title=title, author_id=author_id, isbn=isbn, publication_date=publication_date
         )
         return book
+
+    def get_books_by_author(self, author_id: int):
+        return Book.objects.filter(authors__id=author_id)

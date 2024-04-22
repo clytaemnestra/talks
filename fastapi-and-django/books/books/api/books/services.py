@@ -27,7 +27,7 @@ class BookService:
     def create_book(self, request: CreateBookRequest) -> ReadBookSchema:
         book = self._repository.create(
             title=request.title,
-            author=request.title,
+            author_id=request.author_id,
             isbn=request.isbn,
             publication_date=request.publication_date,
         )

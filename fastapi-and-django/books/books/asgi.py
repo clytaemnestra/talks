@@ -27,5 +27,5 @@ def create_books_api():
 
 
 def _initialize_routes():
-    routes = [("books.api.books.routes", "/v0/books", ["Books"])]
+    routes = [("books.api.books.routes", "/v0/books", ["Books"]), ("books.api.authors.routes", "/v0/authors", ["Authors"])]
     return routes

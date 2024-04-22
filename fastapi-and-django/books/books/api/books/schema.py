@@ -5,7 +5,7 @@ from pydantic import BaseModel, Field
 
 class BaseBookSchema(BaseModel):
     title: str
-    author: str
+    author_id: int
     isbn: str
     publication_date: date
 
