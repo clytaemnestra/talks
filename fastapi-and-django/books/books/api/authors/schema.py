@@ -10,7 +10,8 @@ class BaseAuthorSchema(BaseModel):
         from_attributes = True
 
 
-class CreateAuthorRequest(BaseAuthorSchema): ...
+class CreateAuthorRequest(BaseAuthorSchema):
+    ...
 
 
 class ReadAuthorSchema(BaseAuthorSchema):

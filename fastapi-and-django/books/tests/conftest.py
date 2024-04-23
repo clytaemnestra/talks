@@ -15,26 +15,11 @@ def books_app() -> "FastAPI":
     yield app.get_asgi_app()
 
 
-@pytest.fixture(scope="session")
-def django_db():
-    from django.test.utils import setup_databases, teardown_databases
-
-    config = setup_databases()
-    yield
-    teardown_databases(config)
-
-
 @pytest.fixture(scope="function")
-@pytest.mark.django_db
 def db(django_db_setup):
     import django.apps
-    from django.core import management
     from django.db import connection
 
-    try:
-        yield
-    finally:
-        ...
     all_models = django.apps.apps.get_models()
     tables = [model._meta.db_table for model in all_models]
 
@@ -44,10 +29,6 @@ def db(django_db_setup):
 
 
 def pytest_sessionstart():
-    """
-    Initialize Django for each test session.
-    Later on, we may want to move this hook to conftest down the line
-    """
     from books.django_utils import initialize_django
 
     initialize_django()

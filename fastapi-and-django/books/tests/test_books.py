@@ -1,10 +1,10 @@
-import unittest
 from books.api.books.services import BookService
-from books.api.books.schema import CreateBookRequest, ReadBookSchema
+from books.api.books.schema import CreateBookRequest
 from datetime import date
+import pytest
 
 
-class TestBookRepository:
+class FakeBookRepository:
     def __init__(self):
         self.books = []
         self.next_id = 1
@@ -22,24 +22,23 @@ class TestBookRepository:
         return book
 
 
-class TestBookServiceWithFakeRepository(unittest.TestCase):
-    async def setUp(self):
-        self.test_book_repository = TestBookRepository()
-        self.book_service = BookService(repository=self.test_book_repository)
+@pytest.mark.asyncio
+async def test_create_book():
+    request = CreateBookRequest(
+        title="Test Book",
+        author_id=1,
+        isbn="123-4567890123",
+        publication_date=date.today(),
+    )
 
-    async def test_create_book(self):
-        request = CreateBookRequest(
-            title="Test Book",
-            author_id=1,
-            isbn="123-4567890123",
-            publication_date=date.today(),
-        )
+    fake_book_repository = FakeBookRepository()
+    book_service = BookService(repository=fake_book_repository)
 
-        await self.book_service.create_book(request)
+    await book_service.create_book(request)
 
-        created_book = self.fake_repository.books[-1]
+    created_book = fake_book_repository.books[-1]
 
-        self.assertEqual(created_book["title"], request.title)
-        self.assertEqual(created_book["author_id"], request.author_id)
-        self.assertEqual(created_book["isbn"], request.isbn)
-        self.assertEqual(created_book["publication_date"], request.publication_date)
+    assert created_book["title"] == request.title
+    assert created_book["author_id"] == request.author_id
+    assert created_book["isbn"] == request.isbn
+    assert created_book["publication_date"] == request.publication_date

@@ -14,7 +14,8 @@ class BaseBookSchema(BaseModel):
         from_attributes = True
 
 
-class CreateBookRequest(BaseBookSchema): ...
+class CreateBookRequest(BaseBookSchema):
+    ...
 
 
 class ReadBookSchema(BaseBookSchema):
