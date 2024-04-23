@@ -4,9 +4,6 @@ DEV_COMPOSE_FILE := docker-compose.yml
 build:
 	docker build -t books-app:latest -f Dockerfile .
 
-run-stack:
-	docker compose -f $(DEV_COMPOSE_FILE) up
-
 lint:
 	ruff format
 

@@ -1,4 +1,5 @@
 import pytest
+from fastapi import FastAPI
 
 
 from starlette.testclient import TestClient
@@ -6,13 +7,9 @@ from starlette.testclient import TestClient
 
 @pytest.fixture(scope="session")
 def books_app() -> "FastAPI":
-    from django.core import management
-    from books.application import Application
+    from books.main import app
 
-    management.call_command("migrate")
-
-    app = Application(name="Test App", host="0.0.0.0")
-    yield app.get_asgi_app()
+    yield app
 
 
 @pytest.fixture(scope="function")
@@ -29,9 +26,18 @@ def db(django_db_setup):
 
 
 def pytest_sessionstart():
-    from books.django_utils import initialize_django
+    import os
+    from books.settings import INSTALLED_APPS
+    from django import setup
+    from django.apps import apps
+    from django.core import management
 
-    initialize_django()
+
+    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "books.settings")
+    setup()
+    apps.populate(INSTALLED_APPS)
+
+    management.call_command("migrate")
 
 
 @pytest.fixture(scope="session")
