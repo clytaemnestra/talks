@@ -32,7 +32,6 @@ def pytest_sessionstart():
     from django.apps import apps
     from django.core import management
 
-
     os.environ.setdefault("DJANGO_SETTINGS_MODULE", "books.settings")
     setup()
     apps.populate(INSTALLED_APPS)
