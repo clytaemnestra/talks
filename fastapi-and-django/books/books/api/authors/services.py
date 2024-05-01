@@ -1,7 +1,7 @@
+from asgiref.sync import sync_to_async
 from django.db import transaction
 
 from books.api.authors.schema import ReadAuthorSchema, CreateAuthorRequest
-from books.core.db_utils import db_sync_to_async
 
 
 class AuthorService:
@@ -9,17 +9,17 @@ class AuthorService:
         self._author_repository = author_repository
         self._book_repository = book_repository
 
-    @db_sync_to_async
+    @sync_to_async
     def get_all_authors(self):
         authors_queryset = self._author_repository.get_all()
         return [ReadAuthorSchema.from_orm(author) for author in authors_queryset]
 
-    @db_sync_to_async
+    @sync_to_async
     def get_author(self, author_id: int):
         author = self._author_repository.get(author_id)
         return ReadAuthorSchema.from_orm(author)
 
-    @db_sync_to_async
+    @sync_to_async
     @transaction.atomic
     def delete_author(self, author_id: int) -> None:
         books = self._book_repository.get_books_by_author(author_id)
@@ -28,6 +28,6 @@ class AuthorService:
 
         self._author_repository.delete(author_id)
 
-    @db_sync_to_async
+    @sync_to_async
     def create_author(self, request: CreateAuthorRequest):
         return self._author_repository.create(name=request.name, bio=request.bio)
