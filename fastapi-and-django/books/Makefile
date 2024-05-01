@@ -7,7 +7,7 @@ build:
 lint:
 	ruff format
 
-all-tests:
+run-all-tests:
 	docker-compose -f $(TEST_COMPOSE_FILE) exec app pytest tests
 
 test-stack-up:
