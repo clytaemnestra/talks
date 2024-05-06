@@ -1,6 +1,6 @@
 from datetime import datetime
 
-from books.core.books.models import Book
+from src.books.models import Book
 
 
 class BookRepository:

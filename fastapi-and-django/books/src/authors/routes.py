@@ -1,9 +1,7 @@
-from fastapi import APIRouter, Depends
+from fastapi import APIRouter
 from typing import List
-from .dependencies import attach_author_service, AuthorServiceDependency
+from .dependencies import AuthorServiceDependency
 from .schema import CreateAuthorRequest, ReadAuthorSchema
-from .services import AuthorService
-from ...core.authors.models import Author
 
 router = APIRouter()
 
@@ -17,24 +15,13 @@ async def get_all_authors(
     return await author_service.get_all_authors()
 
 
-# @router.get(
-#     "/{author_id}",
-#     description="Authors: Get an author by id",
-#     response_model=ReadAuthorSchema,
-# )
-# async def get_author_by_id(
-#     author_id: int, author_service: AuthorServiceDependency
-# ):
-#     return await author_service.get_author(author_id)
-
-
 @router.get(
     "/{author_id}",
     description="Authors: Get an author by id",
     response_model=ReadAuthorSchema,
 )
-async def get_author_by_id(author_id: int):
-    return await Author.objects.aget(id=author_id)
+async def get_author_by_id(author_id: int, author_service: AuthorServiceDependency):
+    return await author_service.get_author(author_id)
 
 
 @router.delete(

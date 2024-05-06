@@ -7,7 +7,7 @@ from starlette.testclient import TestClient
 
 @pytest.fixture(scope="session")
 def books_app() -> "FastAPI":
-    from books.main import app
+    from src.main import app
 
     yield app
 
@@ -27,12 +27,12 @@ def db(django_db_setup):
 
 def pytest_sessionstart():
     import os
-    from books.settings import INSTALLED_APPS
+    from src.settings import INSTALLED_APPS
     from django import setup
     from django.apps import apps
     from django.core import management
 
-    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "books.settings")
+    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "src.settings")
     setup()
     apps.populate(INSTALLED_APPS)
 
@@ -48,8 +48,8 @@ def client(books_app) -> TestClient:
 def books():
     from datetime import date
 
-    from books.core.authors.models import Author
-    from books.core.books.models import Book
+    from src.authors.models import Author
+    from src.books.models import Book
 
     author = Author(
         name="Herman Hesse",

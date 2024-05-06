@@ -2,8 +2,8 @@ from typing import Annotated
 
 from fastapi import Depends
 
-from books.api.books.services import BookService
-from books.core.books.repository import BookRepository
+from src.books.repository import BookRepository
+from src.books.services import BookService
 
 
 def attach_book_service() -> BookService:

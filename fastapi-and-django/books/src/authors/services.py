@@ -1,7 +1,7 @@
 from asgiref.sync import sync_to_async
 from django.db import transaction
 
-from books.api.authors.schema import ReadAuthorSchema, CreateAuthorRequest
+from src.authors.schema import ReadAuthorSchema, CreateAuthorRequest
 
 
 class AuthorService:

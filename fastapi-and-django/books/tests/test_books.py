@@ -1,5 +1,5 @@
-from books.api.books.services import BookService
-from books.api.books.schema import CreateBookRequest
+from src.books.services import BookService
+from src.books.schema import CreateBookRequest
 from datetime import date
 import pytest
 

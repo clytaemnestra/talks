@@ -47,7 +47,7 @@ class Migration(migrations.Migration):
                 (
                     "author",
                     models.ForeignKey(
-                        on_delete=django.db.models.deletion.CASCADE, to="core.author"
+                        on_delete=django.db.models.deletion.CASCADE, to="src.author"
                     ),
                 ),
             ],

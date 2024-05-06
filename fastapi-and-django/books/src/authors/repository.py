@@ -1,4 +1,4 @@
-from books.core.authors.models import Author
+from src.authors.models import Author
 
 
 class AuthorRepository:

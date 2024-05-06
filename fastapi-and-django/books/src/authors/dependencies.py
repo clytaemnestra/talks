@@ -2,9 +2,9 @@ from typing import Annotated
 
 from fastapi import Depends
 
-from books.api.authors.services import AuthorService
-from books.core.authors.repository import AuthorRepository
-from books.core.books.repository import BookRepository
+from src.authors.services import AuthorService
+from src.authors.repository import AuthorRepository
+from src.books.repository import BookRepository
 
 
 def attach_author_service() -> AuthorService:

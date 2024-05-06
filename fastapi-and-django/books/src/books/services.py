@@ -1,6 +1,6 @@
 from asgiref.sync import sync_to_async
 
-from books.api.books.schema import ReadBookSchema, CreateBookRequest
+from src.books.schema import ReadBookSchema, CreateBookRequest
 
 
 class BookService:
