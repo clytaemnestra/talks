@@ -9,4 +9,5 @@
 | PyCon US | 18.5.2024 | Combining Django ORM & FastAPI in a Single App | [link](https://github.com/clytaemnestra/talks/blob/main/fastapi-django-orm.pdf) | [link](https://www.youtube.com/watch?v=mllmOJFjaDc) | https://github.com/clytaemnestra/books-demo-app |
 | PyCon Italia | 23.5.2024 | Combining Django ORM & FastAPI in a Single App | [link](https://github.com/clytaemnestra/talks/blob/main/fastapi-django-orm.pdf) | [link](https://www.youtube.com/watch?v=6FiSXec3V1w) | https://github.com/clytaemnestra/books-demo-app |
 | Djangocon Europe | 6.6.2024 | Combining Django ORM & FastAPI in a Single App | [link](https://github.com/clytaemnestra/talks/blob/main/django-orm-fast-api-djangocon.pdf) | [link](https://www.youtube.com/watch?v=AERuDe9YxWE) | https://github.com/clytaemnestra/books-demo-app |
+| Women in Tech | 19.9.2024 | Panel discussion: Breaking Bareers | / | / | / |
 
