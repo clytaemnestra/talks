@@ -12,6 +12,6 @@
 | Women in Tech | 19.9.2024 | Panel discussion: Breaking Bareers | / | 
 | OpenFest Bulgaria | 02.11.2024 | Beyond Code: How to Build a Community Around Your Tools | [link](https://github.com/clytaemnestra/talks/blob/main/beyond-the-code-how-to-build-a-community-around-your-tools.pdf) | / |
 | 42 Prague | 18.11.2024 | From Passion to Career | / | / |
-| FOSDEM | 01.02.2025 | The Psychology Behind Communities: Why Do We Really Contribute? | [link](https://github.com/clytaemnestra/talks/blob/main/the-psychology-behind-communities.pdf) | / |
+| FOSDEM | 01.02.2025 | The Psychology Behind Communities: Why Do We Really Contribute? | [link](https://github.com/clytaemnestra/talks/blob/main/the-psychology-behind-communities.pdf) | [link](https://fosdem.org/2025/schedule/event/fosdem-2025-4193-the-psychology-behind-communities-why-do-we-really-contribute-/) |
 
 
