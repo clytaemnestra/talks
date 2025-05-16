@@ -14,6 +14,6 @@
 | 42 Prague | 18.11.2024 | From Passion to Career | / | / |
 | FOSDEM | 01.02.2025 | The Psychology Behind Communities: Why Do We Really Contribute? | [link](https://github.com/clytaemnestra/talks/blob/main/the-psychology-behind-communities.pdf) | [link](https://fosdem.org/2025/schedule/event/fosdem-2025-4193-the-psychology-behind-communities-why-do-we-really-contribute-/) |
 | DjangoCon Europe | 24.04.2025 | Keynote: The Most Bizarre Software Bugs in History | [link](https://github.com/clytaemnestra/talks/blob/main/the-most-bizarre-software-bugs.pdf) | TBA |
-| PyCon US | 16.05.2025 | The Most Bizarre Software Bugs in History | TBA | TBA |
+| PyCon US | 16.05.2025 | The Most Bizarre Software Bugs in History | [link](https://github.com/clytaemnestra/talks/blob/main/the-most-bizarre-software-bugs_US.pdf) | TBA |
 
 
