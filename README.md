@@ -16,8 +16,8 @@
 | DjangoCon Europe | 24.04.2025 | Keynote: The Most Bizarre Software Bugs in History | [link](https://github.com/clytaemnestra/talks/blob/main/the-most-bizarre-software-bugs.pdf) | [link](https://www.youtube.com/watch?v=PBbM9pH8rQY) |
 | PyCon US | 16.05.2025 | The Most Bizarre Software Bugs in History | [link](https://github.com/clytaemnestra/talks/blob/main/the-most-bizarre-software-bugs_US.pdf) | [link](https://www.youtube.com/watch?v=gM2J5plaDmw) |
 | FOSDEM | 16.05.2025 | The Most Bizarre Software Bugs in History | [link](https://github.com/clytaemnestra/talks/blob/main/the-most-bizarre-software-bugs_US.pdf) | [link](https://www.youtube.com/watch?v=gM2J5plaDmw) |
-| PyCon Lithuania | 08.04.2026 | Your Python has a public roadmap. Most engineers never read it. | [link](https://github.com/clytaemnestra/talks/blob/main/python-roadmap.pdf) | TBA |
-| PyCon US | 16.05.2026 | Hash me if you can: let's talk about Python dictionaries! | TBA | TBA |
+| PyCon Lithuania | 08.04.2026 | Your Python has a public roadmap. Most engineers never read it. | [link](https://github.com/clytaemnestra/talks/blob/main/python-roadmap.pdf) | [link](https://www.youtube.com/watch?v=R0yyajmDylQ) |
+| PyCon US | 16.05.2026 | Hash me if you can: let's talk about Python dictionaries! | [link](https://github.com/clytaemnestra/talks/blob/main/dictionaries.pdf) | TBA |
 | WebExpo | 28.05.2026 | The Most Bizarre Software Bugs in History | TBA | TBA |
 
 
