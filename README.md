@@ -15,9 +15,11 @@
 | FOSDEM | 01.02.2025 | The Psychology Behind Communities: Why Do We Really Contribute? | [link](https://github.com/clytaemnestra/talks/blob/main/the-psychology-behind-communities.pdf) | [link](https://fosdem.org/2025/schedule/event/fosdem-2025-4193-the-psychology-behind-communities-why-do-we-really-contribute-/) |
 | DjangoCon Europe | 24.04.2025 | Keynote: The Most Bizarre Software Bugs in History | [link](https://github.com/clytaemnestra/talks/blob/main/the-most-bizarre-software-bugs.pdf) | [link](https://www.youtube.com/watch?v=PBbM9pH8rQY) |
 | PyCon US | 16.05.2025 | The Most Bizarre Software Bugs in History | [link](https://github.com/clytaemnestra/talks/blob/main/the-most-bizarre-software-bugs_US.pdf) | [link](https://www.youtube.com/watch?v=gM2J5plaDmw) |
-| FOSDEM | 16.05.2025 | The Most Bizarre Software Bugs in History | [link](https://github.com/clytaemnestra/talks/blob/main/the-most-bizarre-software-bugs_US.pdf) | [link](https://www.youtube.com/watch?v=gM2J5plaDmw) |
+| FOSDEM | 01.02.2026 | The Most Bizarre Software Bugs in History | [link](https://github.com/clytaemnestra/talks/blob/main/the-most-bizarre-software-bugs_US.pdf) | [link](https://archive.fosdem.org/2026/schedule/event/GV9PKX-most-bizzare-bugs/) |
 | PyCon Lithuania | 08.04.2026 | Your Python has a public roadmap. Most engineers never read it. | [link](https://github.com/clytaemnestra/talks/blob/main/python-roadmap.pdf) | [link](https://www.youtube.com/watch?v=R0yyajmDylQ) |
-| PyCon US | 16.05.2026 | Hash me if you can: let's talk about Python dictionaries! | [link](https://github.com/clytaemnestra/talks/blob/main/dictionaries.pdf) | TBA |
+| PyCon US | 16.05.2026 | Hash me if you can: let's talk about Python dictionaries! | [link](https://github.com/clytaemnestra/talks/blob/main/dictionaries.pdf) | [link](https://www.youtube.com/watch?v=kHtg-2JMEgk) |
 | WebExpo | 28.05.2026 | The Most Bizarre Software Bugs in History | [link](https://github.com/clytaemnestra/talks/blob/main/the-most-bizarre-software-bugs.pdf) | [link](https://webexpo.net/prague2026/sessions/the-most-bizarre-software-bugs-in-history/) |
+| PyCon España | 07.11.2026 | Keynote: TBA | [link]() | [link]() |
+| Women in Tech | 10.11.2026 | How to Take a Vibecoded App and Make It Production-Ready | [link]() | [link]() |
 
 
