@@ -10,7 +10,7 @@
 | PyCon Italia | 23.5.2024 | Combining Django ORM & FastAPI in a Single App | [link](https://github.com/clytaemnestra/talks/blob/main/fastapi-django-orm.pdf) | [link](https://www.youtube.com/watch?v=6FiSXec3V1w) | 
 | Djangocon Europe | 6.6.2024 | Combining Django ORM & FastAPI in a Single App | [link](https://github.com/clytaemnestra/talks/blob/main/django-orm-fast-api-djangocon.pdf) | [link](https://www.youtube.com/watch?v=AERuDe9YxWE) | https://github.com/clytaemnestra/books-demo-app |
 | Women in Tech | 19.9.2024 | Panel discussion: Breaking Bareers | / | 
-| OpenFest Bulgaria | 02.11.2024 | Beyond Code: How to Build a Community Around Your Tools | [link](https://github.com/clytaemnestra/talks/blob/main/beyond-the-code-how-to-build-a-community-around-your-tools.pdf) | / |
+| OpenFest Bulgaria | 02.11.2024 | Beyond Code: How to Build a Community Around Your Tools | [link](https://github.com/clytaemnestra/talks/blob/main/beyond-the-code-how-to-build-a-community-around-your-tools.pdf) | [link](https://www.youtube.com/watch?v=6K3kp7xEPjw) |
 | 42 Prague | 18.11.2024 | From Passion to Career | / | / |
 | FOSDEM | 01.02.2025 | The Psychology Behind Communities: Why Do We Really Contribute? | [link](https://github.com/clytaemnestra/talks/blob/main/the-psychology-behind-communities.pdf) | [link](https://fosdem.org/2025/schedule/event/fosdem-2025-4193-the-psychology-behind-communities-why-do-we-really-contribute-/) |
 | DjangoCon Europe | 24.04.2025 | Keynote: The Most Bizarre Software Bugs in History | [link](https://github.com/clytaemnestra/talks/blob/main/the-most-bizarre-software-bugs.pdf) | [link](https://www.youtube.com/watch?v=PBbM9pH8rQY) |
